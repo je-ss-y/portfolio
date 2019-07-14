@@ -1,10 +1,12 @@
 body{
      margin:0px;
-} 
-.containerindex{
-                display:grid;
-                grid: template columns 1fr;
 }
+/* 
+.introsecondpart{
+                background-image:url("images/woman.jpg");
+                background-size:cover;
+            } */
+  
 .first{
        display:flex;
        justify-content:space-between;
@@ -23,18 +25,14 @@ body{
 .nav-link{
         height:20px;
         border-bottom: 1px solid transparent;
-        transition:border-bottom 0.5s;
 }
 .nav-link a{
            color:#8a8a8a;
            text-decoration:none;
-           transition: color 0.5s;
+        
 }
-.nav:hover{
-          border-bottom:1px solid black
-}
-.nav a:hover{
-            color:black;
+.nav-link a:hover{
+       background-color:#b3ffff;
 
 }
 /* .gridrow{
@@ -45,28 +43,34 @@ body{
        flex-direction:row;
        padding: 0 4px;
 } */
-#img1{
+ #img1{
      display:flex;
      flex-direction:row;
      justify-content:space-evenly;
      flex-wrap:wrap;
      padding: 4px 280px;
-}
+} 
 #img2{
       display:flex;
       flex-direction:row;
       justify-content:space-evenly;
       flex-wrap:wrap-reverse;
       padding:4px 280px;
+}
      
-}
+
 /* portfolio  home done */
-#meimage{
-    float:left;
-    height:300px;
-    width:400px;
-    margin:0 10px 0 0;
-}
-#meimage2{
-        float:right;
+ #one{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    width:100%;
+   
+} 
+#four{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding: 4px 280px;
 }
