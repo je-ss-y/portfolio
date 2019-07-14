@@ -81,5 +81,9 @@ body{
 #talk{
     display: flex;
     flex-direction: column;
-    padding: 3px 6px ;
+    padding: 0 6px ;
+}
+#hone{
+      text-decoration:underline;
+      color:#ffa31a;
 }
