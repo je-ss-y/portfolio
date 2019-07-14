@@ -74,3 +74,12 @@ body{
     flex-wrap:wrap;
     padding: 4px 280px;
 }
+.about{
+     display:flex;
+
+}
+#id{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4px ;
+}
