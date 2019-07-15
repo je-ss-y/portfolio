@@ -91,3 +91,12 @@ body{
     display: none;
 
 }
+.introsecondpart{
+          background-image: url("../images/woman.jpg");
+          background-size: cover;
+          background-repeat:no-repeat;
+          width:100%;
+          height: 100vh;
+          text-align:right;
+          font-size:40px;
+}
