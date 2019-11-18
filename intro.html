@@ -1,40 +1,243 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>my portfolio</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-         <div class="container">
-             <div class="row">
-             <div class="first">
-                 <div class="leftside">
-                  
-                    <div class="nav-link">
-                        <a href="intro.html">Home</a>
-                   </div>
-                   <div class="nav-link">
-                        <a href="index.html">Projects</a>
-                   </div>
-                   <div class="nav-link">
-                        <a href="about.html">About me</a> 
-                   </div>
-                   
-                </div>
-                    <div class="rightside">
-                        <div class="brand">
-                         <div>JESSICA NKUBITO</div>
-                   </div>
-                   </div>
-            </div>
-     
-        <div class="introsecondpart">
-            <!-- <img src="images/woman.jpg"> -->
-            <h1>WELCOME</h1>
-            <h3>creation</h3>
-        </div>
-    
+
+<head>
+  <title>my portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="first">
+        <style>
+          body {
+            font-family: "Lato", sans-serif;
+          }
+
+          .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
+          @media screen and (max-height: 450px) {
+            .sidenav {
+              padding-top: 15px;
+            }
+
+            .sidenav a {
+              font-size: 18px;
+            }
+          }
+        </style>
+        </head>
+
+        <body>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="intro.html">Home</a>
+            <a href="index.html">Projects</a>
+            <a href="about.html">About </a>
+
+          </div>
+
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+
+
+      </div>
+
+      <div class="rightside">
+        <div class="brand">
+          <div>JESSICA NKUBITO</div>
         </div>
       </div>
-    </body>
-    </html>
+      <div class="Intro">
+     
+           <section class="home_banner_area">
+              <div class="container box_1620">
+                <div class="banner_inner d-flex align-items-center">
+           <div class="banner_content">
+             <div class="media">
+               <div class="d-flex">
+                 <img src="img/me.jpg" alt="">
+               </div>
+               <div class="media-body">
+                 <div class="personal_text">
+                   <h6>Hello Everybody, i am</h6>
+                   <h3>Jessica Nkubito</h3>
+                   <h4>Junior UI/UX Developer</h4>
+                   <p>I am a junior software developper with strong interests in UX , digital marketing and education</p>
+                   <ul class="list basic_info">
+                     <li><a href="#"><i class="lnr lnr-calendar-full"></i> 15th November, 1995</a></li>
+                     <li><a href="#"><i class="lnr lnr-phone-handset"></i> +250786485860</a></li>
+                     <li><a href="#"><i class="lnr lnr-envelope"></i> Current student at Moringa school</a></li>
+                     <li><a href="#"><i class="lnr lnr-home"></i> Wecode Rwanda</a></li>
+                   </ul>
+                   <ul class="list personal_social">
+                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+             </div>
+         </section>
+       
+
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>About Myself</h4>
+        					<p>part of me is down to earth ,another part is a dreamer.
+                    As long as i can remember, i have always wondered what would i be if i wasn't the way i am.
+                    Not to be someone else , but rather everything that i can be. from the good to the bad ,to
+                    the
+                    ugly.
+                    The ambiguity is considered immature in most parts of our society, i have found in the
+                    unknown
+                    the beauty of creation.
+                    my personnality have always driven me to different choices, starting of as a student and
+                    future
+                    worker in the creative industry,
+                    i found from there the beauty in programming.
+                    coding for me, because it's beautiful , a language that creates anything you can imagine .
+                    To
+                    create is why i'm in the industry.</p>
+        					<div class="row">
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4>2</h4>
+        								<p>Digital marketing project</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>24</h4>
+        								<p>School_projects</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>2</h4>
+        								<p>Educational Project</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			
+
+
+        	<!-- Start services Area -->
+			<section class="services-area section-gap">
+				<div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content  col-lg-7">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">My Offered Services</h1>
+		                        <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+		                    </div>
+		                </div>
+		            </div>						
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-services">
+								<span class="lnr lnr-pie-chart"></span>
+								<a href="#"><h4>Web Design</h4></a>
+								<p>
+									“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-services">
+								<span class="lnr lnr-laptop-phone"></span>
+								<a href="#"><h4>Web Development</h4></a>
+								<p>
+									If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
+								</p>
+							</div>
+						</div>
+				
+				
+				
+						<div class="col-lg-4 col-md-6">
+							<div class="single-services">
+								<span class="lnr lnr-rocket"></span>
+								<a href="#"><h4>Graphic Design</h4></a>
+								<p>
+									You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
+								</p>
+							</div>				
+						</div>														
+					</div>
+				</div>	
+			</section>
+			<!-- End services Area -->	
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

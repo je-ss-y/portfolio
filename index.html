@@ -1,47 +1,186 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>my portfolio</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-    <div class="containerindex">
-        <div class="first">
-            <div class="leftside">
-                         
-                <div class="nav-link">
-                               <a href="intro.html">Home</a>
-                 </div>
-                <div class="nav-link">
-                               <a href="index.html">Projects</a>
-                </div>
-                <div class="nav-link">
-                               <a href="about.html">About</a> 
-                </div>
-                          
-            </div>
-                <div class="rightside">
-                    <div class="brand">
-                        <div>JESSICA NKUBITO</div>
-                    </div>
-                </div>
+
+<head>
+  <title>my portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <div class="containerindex">
+    <div class="first">
+      <div class="first">
+        <style>
+          body {
+            font-family: "Lato", sans-serif;
+          }
+
+          .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
+          @media screen and (max-height: 450px) {
+            .sidenav {
+              padding-top: 15px;
+            }
+
+            .sidenav a {
+              font-size: 18px;
+            }
+          }
+        </style>
+        </head>
+
+        <body>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="intro.html">Home</a>
+            <a href="index.html">Projects</a>
+            <a href="about.html">About </a>
+
+          </div>
+
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+
+
+
+      </div>
+      <div class="rightside">
+        <div class="brand">
+          <div>JESSICA NKUBITO</div>
+        </div>
+      </div>
     </div>
-        <div class="content-wrapper">
-            <div class="gridrow">
-               <div id="img1">
-                  <a href="https://repl.it/student/submissions/7189493"><img src="images/umuganda.png" width="400px" height="300px"></a>
-                  <p>Hello</p>
-                  <a href="https://repl.it/student/classrooms/41662"><img src="images/tembea.png"  width="400px" height="300px"></a>
-                  <p>Hello</p>
-                  <a href="file:///home/wecode/Desktop/calc/index.html"><img src="images/calc.png"  width="400px" height="300px"></a>
-               </div> 
-            <div id="img2">
-                 <a href=""></a><img src="images/html.png"  width="400px" height="300px">
-                 <a href=""></a><img src="images/css.png"  width="400px" height="300px">
-                 <a href=""></a><img src="images/javascript.png"  width="400px" height="300px">
-            </div>
-            </div>
-        </div>
-        </div>
+ 
+    <style>
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 400px;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 380px;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
+    </head>
+
+    <body>
+      <div class="gallery">
+        <a target="_blank" href="https://repl.it/student/submissions/7189493">
+          <img src="images/umuganda.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Volunteering in a voice collection project</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank"  href="https://repl.it/student/classrooms/41662">
+          <img src="images/tembea.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">School Project -Tembea Africa</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="file:///home/wecode/Desktop/calc/index.html">
+          <img src="images/calc.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">School-Project - Calculator</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/jessica2.jpg" width="400px" height="300px">
+       
+              <h3>English tutor</h3>
+              <p class="card-text">For the last two years i have been an English tutor for middle
+                  school students.
+                  My job was to facilitate the student's learning .(yes, that drawing is supposed
+                  to
+                  be
+                  me!)
+              </p>
+              <h4>2016-2018</h4>
+
+          </div>
+
+          <div class="gallery">
+              <img src="images/codes.jpeg" width="400px" height="300px">
+          
+                  <h3>Wecode student</h3>
+                  <p class="card-text"> currently a student in moringa school, i am learning and
+                      presently
+                      working on
+                      html,css&javascript based project.
+                      an interesting journey on which i will learn different challenging programming
+                      languages
+                      like python and angular
+                  </p>
+                  <h4>2019-present</h4>
+              </div>
+          </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="images/javascript.png" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+
     </body>
-    </html>
+
+</html>
+
+</div>
+</body>
+
+</html>
